@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <style>
+
+    html {
+    font-size: 100%;
+    }
+
+    header {
+    border-bottom: 10px dotted blue;
+    }
+
+    section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    }
+
+    p {
+    font-size: 2rem;
+    /*width: 8rem;*/
+    padding: 10rem;
+    border: 1px solid black;
+    }
+
+    p:nth-child(2n) {
+    background: blue;
+    color: white;
+    }
+
+    .one {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    }
+
+    .two {
+    grid-column: 3;
+    grid-row: 1;
+    }
+
+    .three {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    }
+
+    .four {
+    grid-column: 1;
+    grid-row: 3;
+    }
+
+    .five {
+    grid-column: 2;
+    grid-row: 3;
+    }
+
+    .six {
+    grid-column: 3;
+    grid-row: 3;
+    }
+
+    footer {
+    border-top: 10px dotted green;
+    }
+
+    </style>
+
+  </head>
+
+  <body>
+
+  <header>
+   <h1>This is a Title</h1>
+  </header>
+
+  <section class="main">
+  <p class="one">Box 1. This is box 1. It's just a box that spans two columns.</p>
+  <p class="two">Box 2</p>
+  <p class="three">Box 3. Box three spans the entire second row. CSS Grid is pretty darn cool. I can use CSS Flex on some sections for my website, and I can use CSS Grid on others. Yay for mixing it up!</p>
+  <p class="four">Box 4</p>
+  <p class="five">Box 5</p>
+  <p class="six">Box 6</p>
+  </section>
+
+  <footer>
+  <h2>This is a Footer</h2>
+  </footer>
+
+  </body>
+</html>
