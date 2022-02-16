@@ -6,7 +6,7 @@
     <title>CSS Grid Demo</title>
     <style>
     html {
-      font-size: 100%;
+      font-size: 100%; /* sets the default size of the font */
     }
 
     header {
@@ -14,8 +14,8 @@
     }
 
     nav ul {
-      display: flex;
-      flex-wrap: wrap;
+      display: flex; /* the <nav> uses Flex for layout */
+      flex-wrap: wrap; /* makes the <nav> responsive to different screen sizes */
     }
 
     nav ul li {
@@ -25,10 +25,11 @@
     }
 
     section {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      grid-auto-rows: minmax(100px, auto);
+      display: grid; /* the <section> uses Grid for layout */
+      grid-template-columns: repeat(3, 1fr); /* this is not responsive to screen
+      sizes; rather it declares that there will be three columns no matter what */
+      gap: 10px; /* sets a space between the elements in <section> */
+      grid-auto-rows: minmax(100px, auto); /* the rows will be at least 100px in height */
     }
 
     p {
@@ -42,7 +43,7 @@
      color: white;
    }
 
-   .one {
+   .one { /* this refers to the <p> class */
      grid-column: 1 / span 2;
      grid-row: 1;
    }
@@ -76,8 +77,8 @@
       border-top: 10px dashed red;
       border-bottom: 10px dashed red;
     }
-    </style>
-  </head>
+    </style> <!--- the CSS ends here, and I switch to HTML style commenting -->
+  </head> <!-- note that the </head> ends here. This is all HTML code below -->
 
   <body>
 

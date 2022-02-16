@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Flex Demo</title>
-    <style>
+    <style> /* Adding CSS here is called using an internal stylesheet. Usually
+    we use an external stylesheet, but this for demo purposes. Note how I'm using
+    CSS style comments and not HTML style comments. This is because This
+    comment is placed after the <style> tag. */
     html {
-      font-size: 100%;
+      font-size: 100%; /* sets the default size of the font */
     }
 
     header {
@@ -14,19 +17,20 @@
     }
 
     section {
-      display: flex;
+      display: flex; /* makes Flex the default layout */
       gap: 10px;
-      flex-wrap: wrap;
+      flex-wrap: wrap; /* this makes the section responsive to different
+      screen sizes */
     }
 
     p {
       border: 1px solid black;
-      font-size: 2rem;
+      font-size: 2rem; /* doubles the default size of the font */
       width: 8rem;
       padding: 10rem;
       }
 
-    p:nth-child(2n) {
+    p:nth-child(2n) { /* select every second <p> element */
       background-color: blue;
       color: white;
     }
