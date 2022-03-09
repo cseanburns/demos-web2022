@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Creating Forms in HTML5</title>
 
+<!--
     <style>
 
     .basic-form label {
@@ -27,7 +28,7 @@
       }
 
     </style>
-
+-->
   </head>
   <body>
 
@@ -85,10 +86,10 @@
     <form action="scripts/action.php" method="post" class="basic-form">
         <label for="name">Enter your name: </label>
         <input type="text" name="name" id="name" required>
-
+        <br>
         <label for="email">Enter your email address: </label>
         <input type="text" name="email" id="email" required>
-
+        <br>
         <input type="submit" value="Subscribe!">
     </form>
 
@@ -144,7 +145,7 @@
 
     <form action="scripts/action.php" method="post">
       <label for="thoughts">What are you thinking about ICT nowadays?</label>
-      <textarea name="thoughts" id="thoughts" rows="10" cols="80">Enter here:</textarea>
+      <textarea name="thoughts" id="thoughts" rows="5" cols="100">Enter here:</textarea>
     </form>
 
   </body>
